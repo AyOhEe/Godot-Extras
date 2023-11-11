@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://njve3qkkacgy"]
+
+[ext_resource type="Environment" uid="uid://vtkujg76uwg2" path="res://addons/Godot-Extras/Environments/Nicer Sky.tres" id="1_kpriv"]
+
+[node name="WorldEnvironment" type="WorldEnvironment"]
+environment = ExtResource("1_kpriv")
