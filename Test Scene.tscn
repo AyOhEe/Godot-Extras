@@ -1,0 +1,16 @@
+[gd_scene load_steps=4 format=3 uid="uid://bat8p8njxr724"]
+
+[ext_resource type="PackedScene" uid="uid://dwqd3nqutpp6t" path="res://addons/Godot-Extras/Environments/SceneLight.tscn" id="1_ao6m5"]
+[ext_resource type="PackedScene" uid="uid://njve3qkkacgy" path="res://addons/Godot-Extras/Environments/WorldEnvironment.tscn" id="2_uu2tn"]
+[ext_resource type="PackedScene" path="res://addons/Godot-Extras/Axis Helper/Axis Helper.tscn" id="3_gs5nr"]
+
+[node name="Node3D" type="Node3D"]
+
+[node name="DirectionalLight3D" parent="." instance=ExtResource("1_ao6m5")]
+
+[node name="WorldEnvironment" parent="." instance=ExtResource("2_uu2tn")]
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(0.680504, -0.295274, 0.670618, -2.87734e-08, 0.915213, 0.40297, -0.732745, -0.274223, 0.622806, 3.631, 2.61278, 3.44942)
+
+[node name="Axis Helper" parent="." instance=ExtResource("3_gs5nr")]
