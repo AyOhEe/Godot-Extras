@@ -1,0 +1,31 @@
+[gd_scene load_steps=7 format=3 uid="uid://ta178svgkj7b"]
+
+[ext_resource type="Material" uid="uid://guwr5i6x1e1q" path="res://addons/Godot-Extras/Axis Helper/Axis Green.tres" id="1_cljue"]
+[ext_resource type="Material" uid="uid://bykj41rb3sdkm" path="res://addons/Godot-Extras/Axis Helper/Axis Blue.tres" id="2_e80fv"]
+[ext_resource type="Material" uid="uid://c8iknexray8pk" path="res://addons/Godot-Extras/Axis Helper/Axis Red.tres" id="3_abnao"]
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_7j1bp"]
+material = ExtResource("1_cljue")
+radius = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_actsa"]
+material = ExtResource("2_e80fv")
+radius = 0.1
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_fmxhu"]
+material = ExtResource("3_abnao")
+radius = 0.1
+
+[node name="Axis Helper" type="Node3D"]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1, 0)
+mesh = SubResource("CapsuleMesh_7j1bp")
+
+[node name="MeshInstance3D2" type="MeshInstance3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 1)
+mesh = SubResource("CapsuleMesh_actsa")
+
+[node name="MeshInstance3D3" type="MeshInstance3D" parent="."]
+transform = Transform3D(-4.37114e-08, -1, 0, 1, -4.37114e-08, 0, 0, 0, 1, 1, 0, 0)
+mesh = SubResource("CapsuleMesh_fmxhu")
